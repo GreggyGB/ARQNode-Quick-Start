@@ -1,7 +1,7 @@
 
 # ArQmA service node easy setup guide
 
-ARQNode requires min Ubuntu 20.04
+ARQNode requires Ubuntu 20.04
 
 ## Installation
 
