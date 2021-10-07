@@ -6,7 +6,7 @@
 ## Installation
 
 ### ALL-IN-ONE installation
-`apt install git && git clone https://github.com/malbit/arqma arqma && cd ~/arqma && bash arqma.sh install`
+`apt install git && git clone https://github.com/GreggyGB/ARQNode-Quick-Start arqma && cd ~/arqma && bash arqma.sh install`
 
 ### Pull this script from github
 `git clone https://github.com/malbit/arqma arqma`
