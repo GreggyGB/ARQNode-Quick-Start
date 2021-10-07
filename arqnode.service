@@ -1,0 +1,11 @@
+[Unit]
+Description=ArQmA service node
+After=network-online.target
+[Service]
+Type=simple
+User=root
+ExecStart=/root/arqnode/arqmad --stagenet --service-node --detach
+Restart=always
+RestartSec=30s
+[Install]
+WantedBy=multi-user.target
