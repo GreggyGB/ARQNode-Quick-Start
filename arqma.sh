@@ -10,7 +10,7 @@ install_node () {
   sudo apt update
   sudo apt-get install  build-essential cmake pkg-config libboost-all-dev libssl-dev libzmq3-dev libunbound-dev libsodium-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev doxygen graphviz libpgm-dev qttools5-dev-tools libhidapi-dev libusb-dev libprotobuf-dev protobuf-compiler
   git submodule update --init --force external/libzmq
-  git clone --recursive 'https://github.com/arqma/arqma -b dev' arqma && cd arqma
+  git clone --recursive 'https://github.com/arqma/arqma' arqma && cd arqma
   git submodule init && git submodule update
   git checkout s_nodes
   make
@@ -21,8 +21,8 @@ install_node () {
   rm /etc/systemd/system/arqnode.service
   sudo cp ~/arqma/arqnode.service /etc/systemd/system/
   sudo systemctl daemon-reload
-  sudo systemctl enable eqnode.service
-  sudo systemctl start eqnode.service
+  sudo systemctl enable arqnode.service
+  sudo systemctl start arqnode.service
 }
 
 prepare_sn () {
