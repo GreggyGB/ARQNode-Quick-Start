@@ -15,7 +15,7 @@ install_node () {
   git checkout s_nodes
   make
 
-  cd build/Linux/s_nodes/release && mv bin ~/
+  cd arqma/build/Linux/s_nodes/release && mv bin ~/
   cd
   mv bin arqnode
   rm /etc/systemd/system/arqnode.service
