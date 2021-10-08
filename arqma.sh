@@ -12,7 +12,7 @@ install_node () {
   git submodule update --init --force external/libzmq
   git clone --recursive 'https://github.com/arqma/arqma' arqma && cd arqma
   git submodule init && git submodule update
-  git checkout s_nodes
+  git checkout dev
   make
 
   cd ~/arqma/arqma/build/Linux/master/release && mv bin ~/
